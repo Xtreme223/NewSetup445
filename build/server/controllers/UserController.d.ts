@@ -1,0 +1,13 @@
+import { Request, Response } from "express";
+declare const getLoggedInUserInfo: (req: Request, res: Response) => Promise<void>;
+declare const addUser: (req: Request, res: Response) => Promise<void>;
+declare const getUsers: (req: Request, res: Response) => Promise<any>;
+declare const removeUser: (req: Request, res: Response) => Promise<any>;
+declare const makeUserAdmin: (req: Request, res: Response) => Promise<any>;
+declare const makeUserRegular: (req: Request, res: Response) => Promise<any>;
+declare const suspendUser: (req: Request, res: Response) => Promise<any>;
+declare const unsuspendUser: (req: Request, res: Response) => Promise<any>;
+declare const changePassword: (req: Request, res: Response) => Promise<any>;
+declare const updateSoundPref: (req: Request, res: Response) => Promise<any>;
+declare const updateLangPref: (req: Request, res: Response) => Promise<any>;
+export { getLoggedInUserInfo, addUser, getUsers, removeUser, makeUserAdmin, makeUserRegular, suspendUser, unsuspendUser, changePassword, updateSoundPref, updateLangPref, };

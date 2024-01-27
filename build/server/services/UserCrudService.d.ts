@@ -1,0 +1,15 @@
+import { User } from "../models/User";
+import { UserDto } from "../dtos/UserDto";
+declare const addUser: (newUser: UserDto) => Promise<UserDto>;
+declare const getUsers: () => Promise<UserDto[]>;
+declare const getUserByUserName: (username: string) => Promise<User[]>;
+declare const removeUser: (userId: string) => Promise<boolean>;
+declare const makeUserAdmin: (userId: string) => Promise<UserDto>;
+declare const makeUserRegular: (userId: string) => Promise<UserDto>;
+declare const suspendUser: (userId: string) => Promise<UserDto>;
+declare const unsuspendUser: (userId: string) => Promise<UserDto>;
+declare const setLangPreference: (username: string, langPref: string) => Promise<boolean>;
+declare const changePassword: (userDto: UserDto) => Promise<UserDto>;
+declare const updateSoundPref: (userDto: UserDto) => Promise<UserDto>;
+declare const updateLangPref: (userDto: UserDto) => Promise<UserDto>;
+export { addUser, getUsers, getUserByUserName, removeUser, makeUserAdmin, makeUserRegular, suspendUser, unsuspendUser, setLangPreference, changePassword, updateSoundPref, updateLangPref, };

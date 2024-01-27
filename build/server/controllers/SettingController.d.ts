@@ -1,0 +1,11 @@
+import { Request, Response } from "express";
+declare const getNotice: (req: Request, res: Response) => Promise<any>;
+declare const updateNotice: (req: Request, res: Response) => Promise<any>;
+declare const enableChat: (req: Request, res: Response) => Promise<any>;
+declare const disableChat: (req: Request, res: Response) => Promise<any>;
+declare const canWeChat: (req: Request, res: Response) => Promise<any>;
+declare const deleteChat: (req: Request, res: Response) => Promise<any>;
+declare const downloadChat: (req: Request, res: Response) => Promise<any>;
+declare const downloadFormatted: (req: Request, res: Response) => Promise<any>;
+declare function getHijri(req: Request, res: Response): Promise<void>;
+export { getNotice, updateNotice, downloadChat, downloadFormatted, enableChat, disableChat, canWeChat, deleteChat, getHijri, };
